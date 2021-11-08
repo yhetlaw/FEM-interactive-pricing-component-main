@@ -1,5 +1,5 @@
 body {
-  font-size: 15px;
+  font-size: 1rem;
   font-family: 'Manrope', sans-serif;
   max-height: 100vh;
   max-width: 100%;
@@ -10,7 +10,7 @@ footer {
   text-align: center;
 }
 
-.div-balls {
+.balls {
   height: 200px;
   width: 100%;
   position: absolute;
@@ -26,7 +26,7 @@ footer {
           flex-direction: column;
 }
 
-.div-balls img {
+.balls img {
   position: relative;
   top: 48px;
   left: -8px;
@@ -34,7 +34,7 @@ footer {
   height: 157px;
 }
 
-.upper-div {
+.top {
   height: 44vh;
   width: 100vw;
   margin: -8px 0 0 -8px;
@@ -52,27 +52,27 @@ footer {
   border-bottom-left-radius: 170px;
 }
 
-.upper-div div {
+.top div {
   position: relative;
   top: 15%;
   text-align: center;
   z-index: 12;
 }
 
-.upper-div div h1 {
+.top div h1 {
   position: relative;
   top: 4%;
 }
 
-.upper-div div p {
+.top div p {
   color: #858fad;
 }
 
-.lower-div {
+.bottom {
   height: 44vh;
 }
 
-.main-div {
+.main {
   height: 50%;
   width: 100%;
   position: absolute;
@@ -88,16 +88,18 @@ footer {
           justify-content: center;
 }
 
-.main-div .square {
-  height: 400px;
-  width: 543px;
+.main .main__square {
+  /* height: 400px;
+    width: 543px; */
+  height: 26rem;
+  width: 37rem;
   background-color: white;
   -webkit-box-shadow: 0px 10px 35px gainsboro;
           box-shadow: 0px 10px 35px gainsboro;
   border-radius: 20px;
 }
 
-.main-div .square .top-div {
+.main .main__square .main__top {
   height: 60%;
   width: 100%;
   background-color: white;
@@ -120,7 +122,7 @@ footer {
   border-top-right-radius: 20px;
 }
 
-.main-div .square .top-div .pageviews {
+.main .main__square .main__top .main__pageviews {
   position: relative;
   left: -140px;
   top: -42px;
@@ -132,7 +134,7 @@ footer {
   height: 11px;
 }
 
-.main-div .square .top-div .price-month {
+.main .main__square .main__top .main__price {
   position: relative;
   display: block;
   left: 121px;
@@ -145,7 +147,7 @@ footer {
   height: 11px;
 }
 
-.main-div .square .top-div .price-month h1 {
+.main .main__square .main__top .main__price h1 {
   font-size: 34px;
   position: relative;
   top: -16px;
@@ -153,14 +155,14 @@ footer {
   color: #293356;
 }
 
-.main-div .square .top-div .price-month p {
+.main .main__square .main__top .main__price p {
   font-size: 15px;
   position: relative;
   top: -71px;
   left: 127px;
 }
 
-.main-div .square .top-div .billing {
+.main .main__square .main__top .main__billing {
   position: relative;
   top: 55px;
   left: 40px;
@@ -172,7 +174,7 @@ footer {
   /* Rounded sliders */
 }
 
-.main-div .square .top-div .billing .monthly-billing {
+.main .main__square .main__top .main__billing .main__monthly-billing {
   color: #858fad;
   position: relative;
   top: -15px;
@@ -180,7 +182,7 @@ footer {
   font-size: 12px;
 }
 
-.main-div .square .top-div .billing .yearly-billing {
+.main .main__square .main__top .main__billing .main__yearly-billing {
   color: #858fad;
   position: absolute;
   top: -15px;
@@ -188,7 +190,7 @@ footer {
   font-size: 12px;
 }
 
-.main-div .square .top-div .billing .discount {
+.main .main__square .main__top .main__billing .main__discount {
   width: 75px;
   height: 18px;
   background-color: #feece7;
@@ -201,13 +203,13 @@ footer {
   top: -74px;
 }
 
-.main-div .square .top-div .billing .discount p {
+.main .main__square .main__top .main__billing .main__discount p {
   font-size: 10px;
   position: relative;
   top: 1px;
 }
 
-.main-div .square .top-div .billing .switch {
+.main .main__square .main__top .main__billing .main__switch {
   position: relative;
   display: inline-block;
   width: 45px;
@@ -216,13 +218,13 @@ footer {
   left: 110px;
 }
 
-.main-div .square .top-div .billing .switch input {
+.main .main__square .main__top .main__billing .main__switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.main-div .square .top-div .billing .slider {
+.main .main__square .main__top .main__billing .main__slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -234,7 +236,7 @@ footer {
   transition: 0.4s;
 }
 
-.main-div .square .top-div .billing .slider:before {
+.main .main__square .main__top .main__billing .main__slider:before {
   position: absolute;
   content: '';
   height: 14px;
@@ -246,72 +248,29 @@ footer {
   transition: 0.4s;
 }
 
-.main-div .square .top-div .billing input:checked + .slider {
+.main .main__square .main__top .main__billing input:checked + .main__slider {
   background-color: #10d5c2;
 }
 
-.main-div .square .top-div .billing input:focus + .slider {
+.main .main__square .main__top .main__billing input:focus + .main__slider {
   -webkit-box-shadow: 0 0 1px #10d5c2;
           box-shadow: 0 0 1px #10d5c2;
 }
 
-.main-div .square .top-div .billing input:checked + .slider:before {
+.main .main__square .main__top .main__billing input:checked + .main__slider:before {
   -webkit-transform: translateX(21px);
   transform: translateX(21px);
 }
 
-.main-div .square .top-div .billing .slider.round {
+.main .main__square .main__top .main__billing .main__slider.round {
   border-radius: 34px;
 }
 
-.main-div .square .top-div .billing .slider.round:before {
+.main .main__square .main__top .main__billing .main__slider.round:before {
   border-radius: 50%;
 }
 
-.main-div .square #slider {
-  position: relative;
-  background: #eaeefb;
-  border-radius: 8px;
-  height: 7px;
-  width: 80%;
-  outline: none;
-  -webkit-transition: background 450ms ease-in;
-  transition: background 450ms ease-in;
-  -webkit-appearance: none;
-}
-
-.main-div .square #slider::-moz-range-thumb {
-  width: 35px;
-  height: 35px;
-  background: #a5f3eb;
-  cursor: pointer;
-  border-radius: 50%;
-  border: #10d5c2;
-  box-shadow: 0px 10px 20px #10d5c2;
-}
-
-.main-div .square #slider::-moz-range-thumb:hover {
-  background-image: url(/images/icon-slider.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-}
-
-.main-div .square #slider::-moz-range-thumb:active {
-  background-color: #10d5c2;
-  background-image: url(/images/icon-slider.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-}
-
-.main-div .square #slider .bot-div {
-  background-color: white;
-  height: 40%;
-  width: 100%;
-}
-
-.check-div {
+.main .main__square .main__bottom .main__card-check {
   position: relative;
   top: 30px;
   left: 65px;
@@ -329,7 +288,7 @@ footer {
           flex-direction: column;
 }
 
-.check-div div {
+.main .main__square .main__bottom .main__card-check div {
   font-size: 12px;
   color: #858fad;
   margin: 5px;
@@ -339,7 +298,7 @@ footer {
   display: flex;
 }
 
-.check-div div .icon-check {
+.main .main__square .main__bottom .main__card-check div .main__icon-check {
   width: 11px;
   height: 11px;
   position: relative;
@@ -347,12 +306,12 @@ footer {
   margin-right: 15px;
 }
 
-.check-div div p {
+.main .main__square .main__bottom .main__card-check div p {
   position: relative;
   top: -10px;
 }
 
-.button {
+.main .main__square .main__bottom .main__button {
   background-color: #293356;
   border: none;
   color: #bdccff;
@@ -373,6 +332,49 @@ footer {
   font-weight: 800;
 }
 
+.main .main__square #main__slider {
+  position: relative;
+  background: #eaeefb;
+  border-radius: 8px;
+  height: 7px;
+  width: 80%;
+  outline: none;
+  -webkit-transition: background 450ms ease-in;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+.main .main__square #main__slider::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  background: #a5f3eb;
+  cursor: pointer;
+  border-radius: 50%;
+  border: #10d5c2;
+  box-shadow: 0px 10px 20px #10d5c2;
+}
+
+.main .main__square #main__slider::-moz-range-thumb:hover {
+  background-image: url(/images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+.main .main__square #main__slider::-moz-range-thumb:active {
+  background-color: #10d5c2;
+  background-image: url(/images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+.main .main__square #main__slider .main__bottom {
+  background-color: white;
+  height: 40%;
+  width: 100%;
+}
+
 .attribution {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,14 +393,10 @@ footer {
   color: #3e52a3;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1000px) {
   .square {
-    height: 400px;
-    width: 543px;
-    background-color: blue;
-    -webkit-box-shadow: 0px 10px 35px gainsboro;
-            box-shadow: 0px 10px 35px gainsboro;
-    border-radius: 20px;
+    width: 31rem;
+    height: 20rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

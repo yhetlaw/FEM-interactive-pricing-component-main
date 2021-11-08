@@ -3,7 +3,7 @@ const pageviews = document.getElementById('pageviews');
 const price = document.getElementById('price');
 
 //Slider background color and dynamic price and pageviews
-document.getElementById('slider').oninput = function () {
+document.getElementById('main__slider').oninput = function () {
   let value = ((this.value - this.min) / (this.max - this.min)) * 100;
   this.style.background =
     'linear-gradient(to right, hsl(174, 77%, 80%), hsl(174, 77%, 80%) ' +
@@ -31,7 +31,7 @@ document.getElementById('slider').oninput = function () {
 };
 
 //Slider button hover | not working
-let image = document.getElementById('slider');
+let image = document.getElementById('main__slider');
 image.onmouseover = function () {
   image.src = 'images/icon-slider.svg';
 };
