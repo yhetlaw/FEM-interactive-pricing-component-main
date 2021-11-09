@@ -3,10 +3,12 @@
 body {
   font-family: 'Manrope', sans-serif;
   background-color: $very-pale-blue;
-  height: 96vh !important;
-  width: 99vw !important;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
@@ -55,6 +57,9 @@ footer {
     }
     p {
       color: $grayish-blue;
+      @include mobile {
+        font-size: 15px;
+      }
     }
   }
 }
