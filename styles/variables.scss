@@ -35,6 +35,13 @@ $mobile: 430px;
   }
 }
 
+$mega-small: 400px;
+@mixin mega-small {
+  @media (max-width: #{$mega-small}) {
+    @content;
+  }
+}
+
 @mixin height-res {
   @media (max-height: 800px) {
     @content;

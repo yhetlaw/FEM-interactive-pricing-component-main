@@ -119,7 +119,6 @@ footer {
         padding: 0;
         width: 150px;
         height: 11px;
-        border: 1px solid red;
 
         @include height-res {
           margin-top: 20px;
@@ -133,6 +132,10 @@ footer {
           left: -77px;
           top: -40px;
           font-size: 13px;
+        }
+        @include mega-small {
+          font-size: 12px;
+          left: -60px;
         }
       }
       .main__price {
@@ -197,9 +200,9 @@ footer {
           left: -50px;
         }
         @include mobile {
-          width: 80%;
-          left: 0;
+          width: 90%;
           height: 60px;
+          left: 20px;
         }
         @include height-res {
           margin-top: -15px;
@@ -373,6 +376,13 @@ footer {
           font-size: 12px;
           width: 125px;
           height: 40px;
+        }
+        @include mega-small {
+          margin-left: -135px;
+          font-size: 11px;
+          width: 90px;
+          height: 40px;
+          border-radius: 18px;
         }
       }
     }
