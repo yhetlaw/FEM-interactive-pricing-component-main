@@ -12,3 +12,25 @@ $light-grayish-blue1: hsl(224, 65%, 95%); //Empty Slider Bar
 $light-grayish-blue2: hsl(223, 50%, 87%); //Toggle Background
 $grayish-blue: hsl(225, 20%, 60%); //Text
 $dark-saturated-blue: hsl(227, 35%, 25%); //Text & CTA Background
+
+//Mixin breakpoints for media queries
+$medium: 610px;
+@mixin medium {
+  @media (max-width: #{$medium}) {
+    @content;
+  }
+}
+
+$small: 540px;
+@mixin small {
+  @media (max-width: #{$small}) {
+    @content;
+  }
+}
+
+$mobile: 430px;
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}

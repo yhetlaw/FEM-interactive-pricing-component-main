@@ -1,9 +1,15 @@
 body {
-  font-size: 1rem;
   font-family: 'Manrope', sans-serif;
-  max-height: 100vh;
-  max-width: 100%;
   background-color: #fafbff;
+  height: 96vh !important;
+  width: 99vw !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer {
@@ -11,8 +17,9 @@ footer {
 }
 
 .balls {
+  -ms-flex-item-align: center;
+      align-self: center;
   height: 200px;
-  width: 100%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,9 +42,7 @@ footer {
 }
 
 .top {
-  height: 44vh;
-  width: 100vw;
-  margin: -8px 0 0 -8px;
+  height: 44%;
   background-color: #eaeefb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,19 +69,19 @@ footer {
   top: 4%;
 }
 
+@media (max-width: 430px) {
+  .top div h1 {
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+}
+
 .top div p {
   color: #858fad;
 }
 
-.bottom {
-  height: 44vh;
-}
-
 .main {
   height: 50%;
-  width: 100%;
-  position: absolute;
-  top: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,14 +94,38 @@ footer {
 }
 
 .main .main__square {
-  /* height: 400px;
-    width: 543px; */
+  position: absolute;
+  top: 25%;
   height: 26rem;
   width: 37rem;
   background-color: white;
   -webkit-box-shadow: 0px 10px 35px gainsboro;
           box-shadow: 0px 10px 35px gainsboro;
   border-radius: 20px;
+}
+
+@media (max-width: 610px) {
+  .main .main__square {
+    height: 21rem;
+    width: 32rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .main .main__square {
+    height: 25rem;
+    width: 27rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .main .main__square {
+    height: 40%;
+    width: 90%;
+    -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
+        align-self: center !important;
+  }
 }
 
 .main .main__square .main__top {
@@ -122,6 +151,12 @@ footer {
   border-top-right-radius: 20px;
 }
 
+@media (max-width: 430px) {
+  .main .main__square .main__top {
+    margin-top: 15px;
+  }
+}
+
 .main .main__square .main__top .main__pageviews {
   position: relative;
   left: -140px;
@@ -134,17 +169,47 @@ footer {
   height: 11px;
 }
 
+@media (max-width: 540px) {
+  .main .main__square .main__top .main__pageviews {
+    left: -100px;
+    top: -50px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  .main .main__square .main__top .main__pageviews {
+    left: -77px;
+    top: -40px;
+    font-size: 13px;
+  }
+}
+
 .main .main__square .main__top .main__price {
   position: relative;
   display: block;
   left: 121px;
-  top: -70px;
+  top: -60px;
   color: #858fad;
   letter-spacing: 1.5px;
   margin: 0;
   padding: 0;
   width: 190px;
   height: 11px;
+}
+
+@media (max-width: 540px) {
+  .main .main__square .main__top .main__price {
+    left: 77px;
+  }
+}
+
+@media (max-width: 430px) {
+  .main .main__square .main__top .main__price {
+    font-size: 22px;
+    left: 54px;
+    top: -45px;
+  }
 }
 
 .main .main__square .main__top .main__price h1 {
@@ -155,11 +220,28 @@ footer {
   color: #293356;
 }
 
+@media (max-width: 540px) {
+  .main .main__square .main__top .main__price h1 {
+    font-size: 26px;
+    top: -28px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .main .main__square .main__top .main__price h1 {
+    font-size: 22px;
+    left: 40px;
+    width: 80%;
+  }
+}
+
 .main .main__square .main__top .main__price p {
   font-size: 15px;
   position: relative;
   top: -71px;
   left: 127px;
+  width: 30%;
 }
 
 .main .main__square .main__top .main__billing {
@@ -172,6 +254,21 @@ footer {
   margin: 0;
   padding: 0;
   /* Rounded sliders */
+}
+
+@media (max-width: 540px) {
+  .main .main__square .main__top .main__billing {
+    top: 55px;
+    left: -50px;
+  }
+}
+
+@media (max-width: 430px) {
+  .main .main__square .main__top .main__billing {
+    width: 80%;
+    left: 0;
+    height: 60px;
+  }
 }
 
 .main .main__square .main__top .main__billing .main__monthly-billing {
@@ -201,6 +298,13 @@ footer {
   position: relative;
   left: 245px;
   top: -74px;
+}
+
+@media (max-width: 430px) {
+  .main .main__square .main__top .main__billing .main__discount {
+    top: -55px;
+    left: 165px;
+  }
 }
 
 .main .main__square .main__top .main__billing .main__discount p {
@@ -288,6 +392,13 @@ footer {
           flex-direction: column;
 }
 
+@media (max-width: 430px) {
+  .main .main__square .main__bottom .main__card-check {
+    margin-left: -50px;
+    margin-top: -20px;
+  }
+}
+
 .main .main__square .main__bottom .main__card-check div {
   font-size: 12px;
   color: #858fad;
@@ -330,6 +441,21 @@ footer {
   border-radius: 50px;
   padding: 0;
   font-weight: 800;
+}
+
+@media (max-width: 540px) {
+  .main .main__square .main__bottom .main__button {
+    margin-left: -80px;
+  }
+}
+
+@media (max-width: 430px) {
+  .main .main__square .main__bottom .main__button {
+    margin-left: -135px;
+    font-size: 12px;
+    width: 125px;
+    height: 40px;
+  }
 }
 
 .main .main__square #main__slider {
@@ -389,14 +515,13 @@ footer {
   text-align: center;
 }
 
-.attribution a {
-  color: #3e52a3;
+@media (max-width: 430px) {
+  .attribution {
+    font-size: 12px;
+  }
 }
 
-@media (max-width: 1000px) {
-  .square {
-    width: 31rem;
-    height: 20rem;
-  }
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=styles.css.map */
