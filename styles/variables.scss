@@ -34,3 +34,9 @@ $mobile: 430px;
     @content;
   }
 }
+
+@mixin height-res {
+  @media (max-height: 800px) {
+    @content;
+  }
+}
